@@ -5,7 +5,8 @@ print("=" * 80)
 print("{:<50} {:<20} {:<8} {:<6}".format("DN", "Description", "Speed", "MTU"))
 print("-" * 80)
 
-with open('json/sample-data.json') as f:
+file="C:\\destination\\Rauan_Tuken_PP2\\lab4\\json\\sample.json"
+with open(file) as f:
     data = json.load(f)
 
 for item in data["imdata"]:
