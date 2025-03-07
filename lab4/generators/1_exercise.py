@@ -3,7 +3,7 @@ def generator_of_squares(n):
     for i in range(n):
         s=(i+1)**2
         res.append(s)
-    return res
+    yield res
 number=int(input("Enter the number: "))
 squares=generator_of_squares(number)
 for square in squares:
